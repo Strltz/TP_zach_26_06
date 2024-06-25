@@ -11,9 +11,6 @@ EXPECT_EQ(a, b - 1);
 
 class MockClass : public A {
 public:
-  A::A() {
-	  mock->for_support();
-  }
   MOCK_METHOD0(for_support, void());
 };
 
