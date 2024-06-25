@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(main main.cpp)
 
 enable_testing()
-add_subdirectory(third-party/gtest)
+add_subdirectory(sup_part/gtest)
 file(GLOB tests "tests/*.cpp")
 foreach(test ${tests})
      add_executable(check ${test})
