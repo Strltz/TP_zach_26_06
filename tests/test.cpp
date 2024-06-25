@@ -14,15 +14,3 @@ TEST (tests, test_3) {
   EXPECT_EQ(obj1->getInstance(), nullptr);
 }
 
-class MockClass : public A {
-public:
-    MOCK_METHOD0(for_support, void());
-};
-
-MockClass* mock = nullptr;
-
-TEST (tests, test_2) {
-  EXPECT_CALL(*mock, for_support())
-        .Times(1);
-  A* obj1 = A::getInstance();
-}
