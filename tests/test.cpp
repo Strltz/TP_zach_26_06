@@ -21,12 +21,6 @@ public:
 
 MockClass* mock = nullptr;
 
-A::A() {
-	mock->for_support();
-}
-
-A* A::instance = nullptr;
-
 TEST (tests, test_2) {
   EXPECT_CALL(*mock, for_support())
         .Times(1);
