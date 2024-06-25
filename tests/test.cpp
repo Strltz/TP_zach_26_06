@@ -11,6 +11,5 @@ EXPECT_EQ(a, b - 1);
 
 TEST (tests, test_3) {
   A* obj1 = A::getInstance();
-  //A* obj2 = A::getInstance();
   EXPECT_EQ(obj1->getInstance(), nullptr);
 }
